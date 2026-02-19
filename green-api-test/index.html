@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GREEN API Test Page</title>
+    <link rel="stylesheet " href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="left-column">
+        <input type="text" id="idInstance" name="idInstance" placeholder="idInstance">
+        <input type="text" id="apiToken" name="apiToken" placeholder="ApiTokenInstance">
+
+        <button onclick="getSettings()">getSettings</button>
+        <button onclick="getStateInstance()">getStateInstance</button>
+
+        <input type="text" id="phone" name="phone" placeholder="Phone (e.g. 77071234567)">
+        <input type="text" id="message" name="message" placeholder="Message">
+        <button onclick="sendMessage()">sendMessage</button>
+
+        <input type="text" id="fileUrl" name="fileUrl" placeholder="File URL">
+        <button onclick="sendFileByUrl()">sendFileByUrl</button>
+    </div>
+
+    <div class="right-column">
+        <p>Response:</p>
+        <textarea id="response" name="response" readonly></textarea>
+    </div>
+</div>
+
+<script src="/green-api-test/main.js"></script>
+
+</body>
+</html>
